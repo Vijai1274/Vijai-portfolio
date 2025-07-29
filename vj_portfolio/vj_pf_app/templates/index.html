@@ -1,0 +1,304 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Vijai-Portfolio</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header" >
+      <div class="logo">VIJAI</div>
+
+      <nav class="navbar" id="navbar">
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    </header>
+
+    <section class="intro-section" id="home" data-aos="fade-right">
+    <div class="intro-wrapper">
+      
+      <!-- Left Content -->
+      <div class="intro-text">
+        
+        <h1>I'm <span class="highlight">Vijai</span></h1>
+        <h2>Python Full Stack Developer</h2>
+
+        <div class="cta-buttons">
+          <a href="{% static 'resume/Vijai_Full_Stack_Dev_Resume.pdf' %}" class="btn" download>Download Resume</a>
+          <a href="#contact" class="btn secondary">Contact Info</a>
+        </div>
+
+        <div class="social-icons">
+            <a href="mailto:vv8960727@gmail.com" target="_blank">
+            <i class="fa-solid fa-envelope"></i>
+            <span class="social-text">Gmail</span>
+          </a>
+          <a href="https://github.com/Vijai1274" target="_blank">
+            <i class="fa-brands fa-github"></i>
+            <span class="social-text">GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/vijai1274/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+            <span class="social-text">LinkedIn</span>
+          </a>
+        </div>
+        
+      </div>
+
+      <!-- Right Image -->
+      <div class="intro-image">
+        <img src="{% static 'images/Vijai.png' %}" alt="Vijai" class="profile-image" />
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="about-section" id="about" data-aos="fade-up">
+  <div class="about-wrapper">
+    <div class="about-text">
+      <h2>ABOUT</h2>
+      <ul>
+        <li>
+          I'm a passionate Python Full Stack Developer with over 1 year of experience building full-stack web applications.
+        </li>
+        <li>
+          I specialize in designing scalable backend systems using Django, integrating REST APIs, and developing responsive user interfaces with HTML, CSS, and JavaScript.
+        </li>
+        <li>
+          I've worked on real-world projects including user authentication, third-party API integrations, dynamic admin dashboards, and performance-optimized web apps.
+        </li>
+        <li>
+          I enjoy solving challenging problems, exploring new technologies, and writing clean, maintainable code that creates real impact.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="skills-section" id="skills" data-aos="fade-up">
+  <h2>SKILLS</h2>
+  <div class="skills-container">
+    <!-- Frontend Card -->
+    <div class="skill-card">
+      <h3>Frontend</h3>
+      <ul>
+        <li><i class="fab fa-html5"></i> HTML</li>
+        <li><i class="fab fa-css3-alt"></i> CSS</li>
+        <li><i class="fab fa-js"></i> JavaScript</li>
+        <li><i class="fab fa-react"></i> ReactJS</li>
+        <li><i class="fas fa-wind"></i> Tailwind CSS</li>
+      </ul>
+    </div>
+
+    <!-- Backend Card -->
+    <div class="skill-card">
+      <h3>Backend</h3>
+      <ul>
+        <li><i class="fab fa-python"></i> Python</li>
+        <li><i class="fas fa-fire"></i> Flask</li>
+        <li><i class="fas fa-leaf"></i> Django</li>
+        <li><i class="fas fa-database"></i> SQL</li>
+        <li><i class="fab fa-js"></i> JavaScript</li>
+      </ul>
+    </div>
+
+    <!-- Database Card -->
+    <div class="skill-card">
+      <h3>Database</h3>
+      <ul>
+        <li><i class="fas fa-database"></i> MSSQL</li>
+        <li><i class="fas fa-database"></i> SQLite</li>
+        <li><i class="fas fa-database"></i> MySQL</li>
+      </ul>
+    </div>
+
+    <!-- Tools Card -->
+    <div class="skill-card">
+      <h3>Tools</h3>
+      <ul>
+        <li><i class="fas fa-palette"></i> Canva</li>
+        <li><i class="fab fa-figma"></i> Figma</li>
+        <li><i class="fas fa-plug"></i> Postman API</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<section class="work-section" id="work" data-aos="fade-up"> 
+  <h2>WORK EXPERIENCE</h2>
+
+  <div class="company-card">
+    <h3>Sreyas Software Solutions Pvt Ltd (GoldPE)</h3>
+    <p><strong>Position:</strong> Python Full Stack Developer</p>
+    <p><strong>Duration:</strong> October 2024 – Present</p>
+    <p><strong>Company Website:</strong>
+      <a href="https://ssstech.co.in/" target="_blank">ssstech.co.in</a> |
+      <a href="https://goldpe.co.in/" target="_blank">goldpe.co.in</a>
+    </p>
+
+    <div class="projects-wrapper">
+      <!-- GoldPE Web App Project -->
+      <div class="project-card">
+        <h4>GoldPE Web Application <span class="duration">(Oct 2024 – Present)</span></h4>
+        <ul>
+          <li>Built scalable backend using <strong>Python</strong> and <strong>Django</strong>.</li>
+          <li>Integrated multiple external APIs (Aadhaar, SMS, Banking, etc.).</li>
+          <li>Implemented full CRUD operations, admin panel, secure user authentication.</li>
+          <li>Managed data using <strong>MSSQL</strong> database.</li>
+          <li>Collaborated with UI/UX team using <strong>HTML</strong>, <strong>CSS</strong>, <strong>ReactJS</strong>, and <strong>Tailwind CSS</strong>.</li>
+        </ul>
+      </div>
+
+      <!-- Visvas Website Project -->
+      <div class="project-card">
+        <h4>Visvas Website <span class="duration">(Dec 2024 – Present)</span></h4>
+        <ul>
+          <li>Developed full-stack features for campaign and participant registration.</li>
+          <li>Created multiple dynamic forms for data collection with validations.</li>
+          <li>Built Django admin panel to manage records and export data.</li>
+          <li>Implemented full CRUD operations and visual dashboards.</li>
+          <li>Enhanced UI with <strong>HTML/CSS</strong> and <strong>JavaScript</strong> for smooth UX.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-section" id="contact" data-aos="fade-up">
+  <h2>CONTACT ME</h2>
+  <p class="subheading">Keep in Touch</p>
+
+
+    
+
+    <!-- {% if messages %}
+  <div class="alert-wrapper">
+    {% for message in messages %}
+      <div class="alert-message {{ message.tags }}">
+        {{ message }}
+      </div>
+    {% endfor %}
+  </div>
+{% endif %} -->
+
+
+  <form method="post" action="/" >
+    {% csrf_token %}
+    <label>Name</label>
+    <input type="text" name="name" required placeholder="-- your name  --">
+
+    <label>Email</label>
+    <input type="email" name="email" required placeholder="-- your email --">
+
+    <label>Mobile</label>
+    <input type="text" name="mobile" required placeholder="-- your mobile --">
+
+    <label>Message</label>
+    <textarea name="message" required placeholder="Write Something....."></textarea>
+
+    <div class="button-center">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</section>
+
+
+
+<!-- {% if messages %}
+      <ul>
+        {% for message in messages %}
+          <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %} -->
+    
+<!--
+    <form method="post" action="/">
+      {% csrf_token %}
+      <label>Name:</label><br>
+      <input type="text" name="name" required><br><br>
+
+      <label>Email:</label><br>
+      <input type="email" name="email" required><br><br>
+
+      <label>Mobile:</label><br>
+      <input type="text" name="mobile" required><br><br>
+
+      <label>Message:</label><br>
+      <textarea name="message" required></textarea><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div> -->
+
+  <footer class="footer" data-aos="fade-left">
+  <div class="social-icons">
+    <a href="https://github.com/Vijai1274" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.instagram.com/vijai__tkd?utm_source=qr&igsh=MWVnZGRib250azd4YQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/vijai1274/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="mailto:vv8960727@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+  </div>
+  <p class="copyright">Copyright © 2025 Vijai | All rights reserved</p>
+</footer>
+
+
+  <script src="{% static 'js/index.js' %}"></script>
+
+  <!-- <a href="#home" class="back-to-top" id="backToTopBtn" title="Go to Top">
+    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+  </a> -->
+
+
+{% if messages %}
+  <div id="alert-container">
+    {% for message in messages %}
+      <div class="alert-message {{ message.tags }}">
+        {{ message }}
+      </div>
+    {% endfor %}
+  </div>
+
+  <script>
+    // Automatically hide the alert after 5 seconds
+    setTimeout(function () {
+      const alertContainer = document.getElementById('alert-container');
+      if (alertContainer) {
+        alertContainer.style.opacity = '0';
+        alertContainer.style.transition = 'opacity 0.5s ease';
+        setTimeout(() => alertContainer.remove(), 600); // Fully remove after fade
+      }
+    }, 5000);
+  </script>
+{% endif %}
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800, // animation duration
+    once: true     // animate only once
+  });
+</script>
+
+  
+</body>
+</html>

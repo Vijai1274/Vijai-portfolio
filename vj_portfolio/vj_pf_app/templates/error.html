@@ -1,0 +1,62 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Error - Vijai Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+      background: #f9fafb;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+      color: #333;
+    }
+    .error-box {
+      max-width: 600px;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      background: white;
+    }
+    h1 {
+      font-size: 48px;
+      color: #ef4444;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    a {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #4f7df1;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      background: #375ac8;
+    }
+    .error-message {
+      margin-top: 20px;
+      color: #999;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="error-box">
+    <h1><i class="fa-solid fa-triangle-exclamation" style="color:#ef4444; margin-right: 10px;"></i>Oops! Something Went Wrong</h1>
+    <p>Please check your internet connection or try again later.</p>
+    <a href="{% url 'contact_form' %}">← Back to Home</a>
+    {% if error %}
+    <div class="error-message">Debug info: {{ error }}</div>
+    {% endif %}
+  </div>
+</body>
